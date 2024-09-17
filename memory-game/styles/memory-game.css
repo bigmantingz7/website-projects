@@ -1,0 +1,87 @@
+/* general website styling */
+body {
+    background-color: rgb(60, 55, 68);
+    font-size: 45px;
+    color: rgb(251, 255, 241);
+    font-family: monospace;
+    font-weight: 700;
+    padding: 0px 0px 100px 0px;
+}
+
+button {
+    font-size: 25px;
+    font-family: monospace;
+    color: rgb(180, 197, 228);
+    background-color: rgb(9, 12, 155);
+    border: none;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px rgba(251, 255, 241, 0.5);
+    cursor: pointer;
+    transition: opactiy 0.15s;
+}
+
+button:hover {
+    opacity: 0.25;
+}
+
+/* main-container styling */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* game-container styling */
+.game-container {
+    display: flex;
+    flex: 1 200px;
+}
+
+/* game grid styling */
+.memory-game-grid {
+    display: grid;
+    width: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 20px;
+    row-gap: 20px;
+
+    background-color: rgb(180, 197, 228);
+    padding: 20px;
+}
+
+/* card styling */
+.card-container {
+    display: inline-block;
+    background-color: rgb(9, 12, 155);
+    border: 10px double rgb(48, 102, 190);
+    text-align: center;
+    cursor: pointer;
+}
+
+.memory-image,
+.mystery-image {
+    border-radius: 20px;
+    width: 130px;
+    margin-top: 10px; 
+}
+
+/* game functions container styling */
+.game-functions-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(48, 102, 190);
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.game-functions-container p {
+    margin: 0px;
+}
+
+.winning-message {
+    font-size: 12px;
+}
